@@ -1,0 +1,107 @@
+/* CSS untuk seluruh elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000000;
+}
+
+/* CSS untuk kontainer navbar */
+.container-navbar {
+    display: flex;
+    justify-content: center; /* Menciptakan flex container dan memastikan elemen berada di tengah secara horizontal */
+    align-items: center;     /* Memastikan elemen berada di tengah secara vertikal */
+    height: 60px;            /* Menambahkan tinggi pada navbar agar terlihat lebih baik */
+    background-color: #000000;  /* Menambahkan warna latar belakang untuk navbar */
+}
+
+/* CSS untuk ul */
+ul {
+    width: auto;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center; /* Mengatur elemen ul agar berada di tengah */
+}
+
+/* CSS untuk li */
+li {
+    color: #f7c27b;
+    padding: 3px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.p-nav {
+    display: flex;
+    justify-content: flex-start;
+    font-family: "Russo One", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 100;
+    margin-right: 50px;    
+}
+.container-avatar {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: solid #f7d09d 2px;
+    width: 300px;
+    height: auto;
+    box-shadow: 1px 1px 37px -2px rgba(247,208,157,0.75);
+    -webkit-box-shadow: 1px 1px 37px -2px rgba(247,208,157,0.75);
+    -moz-box-shadow: 1px 1px 37px -2px rgba(247,208,157,0.75);
+}
+.container-teks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    justify-content: flex-start;
+    color: #f7d09d;
+}
+h1 {
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 0 10px 0;
+}
+.container-t {
+
+}
+
+.animasi {
+    color: white;
+    margin-bottom: 10px;
+}
+#button-sm {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    animation: fadeIn ease 2s;
+}
+#btn-sm {
+    margin-top: 10px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+#btn-sm:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 35px hsla(45, 43%, 58%, 0.713);
+    transition: ease-in 2ms;
+    transition-delay: 3ms;
+}

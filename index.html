@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portofolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="container-navbar">
+        <ul>
+            <p class="p-nav">NAMSS</p>
+            <li>home</li>
+            <li>about me</li>
+            <li>contact</li>
+        </ul>
+    </nav>
+    <div>
+        <div class="container-avatar">
+            <img class="avatar" src="avatar.jpg">
+        </div>
+        <div class="container-teks">
+            <div class="container-t">
+                <p>Hello word, I'm</p>
+                <h1>Anamullah A.</h1>
+                <p id="animasi" class="animasi"></p>
+                <p>Welcome to my personal website</p>
+            </div>
+            <div id="button-sm">
+                <a href="https://www.instagram.com/anmllh.a/" class="button"> 
+                  <img id="btn-sm" src="ig.jpg" alt="instagram"> 
+                </a>
+                <a href="https://wa.me/6288804009496/" class="button"> 
+                  <img id="btn-sm" src="wa.png" alt="Whatsapp"> 
+                </a>
+                <a href="https://www.linkedin.com/in/muh-anamullah-a-278a24311" class="button"> 
+                  <img id="btn-sm" src="lin.png" alt="linkdin"> 
+                </a>
+              </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+      const text = "Web Developer & UI/UX Designer";
+      const typedTextSpan = document.getElementById("animasi");
+
+      let index = 0;
+      const typingSpeed = 100; // Kecepatan ketik dalam milidetik
+      const waitingTime = 1000; // Waktu tunggu sebelum mengulang animasi
+
+      function typeText() {
+          if (index < text.length) {
+              typedTextSpan.textContent += text.charAt(index);
+              index++;
+              setTimeout(typeText, typingSpeed);
+          } else {
+              setTimeout(resetText, waitingTime);
+          }
+      }
+
+      function resetText() {
+          typedTextSpan.textContent = "";
+          index = 0;
+          setTimeout(typeText, typingSpeed);
+      }
+
+      typeText(); // Mulai animasi ketik
+      });
+
+      
+      </script>
+    
+</body>
+</html>
